@@ -22,13 +22,6 @@
     background-color: rgb(33, 59, 126, 1);
 }
 
-@media screen and (min-width: 300px) (max-width: 630px) {
-    .site-logo {
-        width: auto;
-        min-height: 80px;
-    }
-}
-
 .site-menu {
     align-self: stretch;
     display: flex;
@@ -124,6 +117,10 @@
     background-color: rgb(234, 93, 33, 1);
     border: none;
 }
+.site-logo {
+width: 64px;
+height: 64px;
+}
 
 /* main */
 .main {
@@ -211,6 +208,7 @@ h2 {
 }
 
 .student {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,6 +223,23 @@ h2 {
     student {
         max-width: calc(100% / 2);
     }
+}
+.student-new {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: -13px;
+    display: flex;
+    padding: 2px 5px;
+    border-radius: 20px;
+    background-color: #3aa828;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .students>img {
@@ -288,7 +303,11 @@ h2 {
 }
 
 .contacts-maps {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 1300px;
+    height: 400px;
+    margin: 0 auto;
     margin-bottom: 15px;
 }
 
@@ -361,12 +380,6 @@ h2 {
     align-items: center;
 }
 
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
 .lanscape {
     width: 50%;
     height: auto;
@@ -388,11 +401,6 @@ table {
 
 div h6 {
     color: darkblue;
-}
-
-.td {
-    border: 2px solid black;
-    border-collapse: collapse;
 }
 
 #one {
